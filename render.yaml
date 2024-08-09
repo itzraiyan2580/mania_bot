@@ -5,7 +5,7 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python3 main.py
-    repo: https://github.com/itzraiyan2580/File-Sharing-Bot.git      
+    repo: https://github.com/CodeXBotz/File-Sharing-Bot.git      
     branch: main
     envVars:
       - key: API_HASH 
