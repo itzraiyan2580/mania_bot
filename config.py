@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002026477147"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hi {mention}</b><b> I'm a permanent file store bot for </b><b>@anime_mania_0</b><b> &amp; </b><b>@anime_flix_0</b><b>...🍷</b><b> To use me, join the channels🖤</b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>Hello, {mention} 👋</b>\n\n<b> I'm a permanent file store bot for </b><b>@anime_mania_0</b><b> &amp; </b><b>@anime_flix_0</b><b>...🍷</b><b> To use me, Join the channels🖤</b>")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -46,7 +46,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Welcome, {mention} !!</b> <b><i> To continue, please subscribe to our channel ‼️</i></b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Hello, {mention} 👋</b> <b><i> To continue, please subscribe to our channel ‼️</i></b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", "False") == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only A File Share bot!"
+USER_REPLY_TEXT = "<b>❌Don't send me messages directly I'm only A File Share bot!</b>"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
