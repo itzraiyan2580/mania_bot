@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7320481042:AAGgX0ouoanqS8Z7ksMGAEAlKa8FGaX8E7w")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "26684254"))
@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002026477147"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>Hello, {mention} 👋</b>\n\n<b> I'm a permanent Post & Files store bot for </b><b>@Anime_mania_0</b><b> &amp; </b><b>@anime_flix_0</b><b>...🍷</b><b> To use me, Join the channels🖤</b>")
+START_MSG = os.environ.get('START_MESSAGE', '<b>ʜᴇʟʟᴏ! 👋 {mention}\n\nɪ’ᴍ ᴀ ᴘᴏsᴛ- sʜᴀʀɪɴɢ ʙᴏᴛ ғᴏʀ <a href="https://t.me/anime_mania_0">ᴀɴɪᴍᴇ ᴍᴀɴɪᴀ</a> 🎌\nᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴɪᴍᴇ? ᴊᴜsᴛ ᴄʟɪᴄᴋ ᴛʜᴇ ᴅᴏᴡɴʟᴏᴀᴅ ɴᴏᴡ ʙᴜᴛᴛᴏɴ ᴏɴ ᴀɴʏ ᴘᴏsᴛ 📲\nsᴇʟᴇᴄᴛ ʏᴏᴜʀ ᴘʀᴇғᴇʀʀᴇᴅ ʀᴇsᴏʟᴜᴛɪᴏɴ, ᴀɴᴅ ʟᴇᴛ ᴛʜᴇ ᴍᴀɢɪᴄ ʜᴀᴘᴘᴇɴ 💫</b>')
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -46,7 +46,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Hello, {mention} 👋</b>\n\n<b>To continue, Please subscribe to our channel ‼️</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>ʙᴀᴋᴀ! ʏᴏᴜ ʜᴀᴠᴇ ᴛᴏ ᴊᴏɪɴ ᴍʏ sᴇɴᴘᴀɪ's ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ᴘᴏsᴛs‼️\nᴏɴᴄᴇ ʏᴏᴜ ᴊᴏɪɴ, ʏᴏᴜ'ʟʟ ɢᴇᴛ ᴀᴄᴄᴇss ᴛᴏ ᴛʜᴇ ᴀɴɪᴍᴇ ᴘᴏsᴛs, ᴡɪᴛʜ ᴀʟʟ ᴛʜᴇ ʙᴇsᴛ ᴅᴏᴡɴʟᴏᴀᴅs ᴀɴᴅ ᴜᴘᴅᴀᴛᴇs! 🌟\nᴡʜᴀᴛ ᴀʀᴇ ʏᴏᴜ ᴡᴀɪᴛɪɴɢ ғᴏʀ? ᴊᴏɪɴ ᴜs ɴᴏᴡ⚡</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
@@ -58,7 +58,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" e
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", "True") == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "<b>❌Don't send me messages directly I'm only A File Sharing bot!</b>"
+USER_REPLY_TEXT = "<b>ʙᴀᴋᴀᴀᴀ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ sᴇɴᴘᴀɪ ✖</b>"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
